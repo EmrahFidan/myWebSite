@@ -580,4 +580,39 @@ h3.my-profession {
 
 /* Portfolio */
 
+.portfolio .portfolio-heading{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.portfolio .portfolio-heading h2{
+  font-weight: 500;
+  color: var(--text-black-900);
+}
+
+.portfolio .container{
+  padding-bottom: 40px;
+}
+
+.portfolio .portfolio-item{
+  margin-bottom: 30px;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.portfolio .portfolio-item-inner{
+  overflow: hidden;
+  border-radius: 10px;
+  border: 6px solid var(--bg--black-100);
+  cursor: pointer;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img{
+  display: block;
+  width: 100%;
+}
+
+/* Contact Us */
+
 
