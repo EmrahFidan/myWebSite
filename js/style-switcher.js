@@ -25,6 +25,7 @@ function setActiveStyle(color) {
   });
 }
 
+
 // CHANGE THEME LIGHT AND DARK MODE
 
 const dayNight = document.querySelector(".day-night");
@@ -42,5 +43,4 @@ window.addEventListener("load", () => {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
-
 
