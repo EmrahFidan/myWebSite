@@ -25,6 +25,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+
+    <script>
+      // Sayfa tamamen yüklendikten sonra çalışacak olan kod
+      window.addEventListener("load", function() {
+        // body elementinin classına dark classını ekle
+        document.body.classList.add("dark");
+      });
+    </script>
+
   </head>
   <body>
     <!-- ===== Main Contain Start ===== -->
@@ -46,7 +55,7 @@
             <a href="#about"><i class="fa fa-user"> </i>About</a>
           </li>
           <li>
-            <a href="#services"><i class="fa fa-list"> </i>Services</a>
+            <a href="#services"><i class="fa-solid fa-bell-concierge"></i>Services</a>
           </li>
           <li>
             <a href="#portfolio"><i class="fa fa-briefcase"> </i>Portfolio</a>
