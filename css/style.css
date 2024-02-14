@@ -8,9 +8,9 @@
   --text-black-700: #504e70;
 }
 
-body.dark{
+body.dark {
   --bg--black-900: #151515;
-  --bg--black-100: #222222;
+  --bg--black-100: #140152;
   --bg--black-50: #393939;
   --text-black-900: #ffffff;
   --text-black-700: #e9e9e9;
@@ -48,26 +48,30 @@ ul {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index:0;
+  z-index: 0;
   overflow-y: auto;
-  overflow-x:  hidden;
-  transition: all 0.3s ease; 
+  overflow-x: hidden;
+  transition: all 0.3s ease;
 }
 
-.section.back-section{
+.section.back-section {
   z-index: 1;
 }
 
-.section.active{
+.section.back-section2 {
+  z-index: 1;
+}
+
+.section.active {
   z-index: 2;
   opacity: 1;
   animation: slideSection 1s ease;
 }
-@keyframes slideSection{
-  0%{
+@keyframes slideSection {
+  0% {
     transform: translateX(100%);
   }
-  100%{
+  100% {
     transform: translateX(0%);
   }
 }
@@ -129,6 +133,7 @@ ul {
   margin-right: -15px;
   position: relative;
 }
+
 .btn {
   font-size: 16px;
   font-weight: 500;
@@ -145,6 +150,54 @@ ul {
   transform: scale(1.05);
 }
 
+.btn-hireMe,
+.btn-cv {
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--skin-color);
+  margin: 1rem auto;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  border-style: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: 2px solid var(--skin-color);
+  box-shadow: 0px 0px 7px var(--text-black-900);
+}
+
+.btn-hireMe:before,
+.btn-cv::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--skin-color);
+  background: var(--skin-color);
+  transform: translateX(-101%);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.btn-hireMe:hover,
+.btn-cv:hover {
+  transition: all 0.5s ease;
+  color: var(--text-black-900);
+}
+
+.btn-hireMe:hover::before,
+.btn-cv:hover::before {
+  transform: translateX(0);
+}
+
 /* aside */
 .aside {
   width: 270px;
@@ -152,9 +205,9 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 30px;
+  padding: 10px;
   height: 100%;
-  border-right: 1px solid var(--bg--black-50);
+  border-right: 2px solid var(--bg--black-50);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,47 +217,35 @@ ul {
 
 .aside .logo {
   position: absolute;
-  top: 50px;
+  top: 60px;
   font-size: 30px;
-  text-transform: capitalize;
 }
 
 .aside .logo a {
   color: var(--text-black-900);
-  font-weight: 700;
-  padding: 10px 15px 15px 20px;
-  font-size: 25px;
-  letter-spacing: 5px;
+  padding: 5px;
   position: relative;
+  margin: 0px 5px;
 }
 
-.aside .logo a span {
-  font-family: "Clicker Script", cursive;
-  font-size: 35px;
+.socialContainer {
+  background-color: transparent;
+  transition-duration: 0.3s;
 }
 
-.aside .logo a::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-bottom: 5px solid var(--skin-color);
-  border-left: 5px solid var(--skin-color);
-  bottom: 0;
-  left: 0;
-  border-radius: 5px;
+.containerOne:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
 }
 
-.aside .logo a::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-top: 5px solid var(--skin-color);
-  border-right: 5px solid var(--skin-color);
-  top: 0;
-  right: 0;
-  border-radius: 5px;
+.containerTwo:hover {
+  background-color: darkgreen;
+  transition-duration: 0.3s;
+}
+
+.containerThree:hover {
+  background-color: #a51d1d;
+  transition-duration: 0.3s;
 }
 
 .aside .nav-toggler {
@@ -220,8 +261,7 @@ ul {
   display: none;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease; 
-
+  transition: all 0.3s ease;
 }
 
 .aside .nav-toggler span {
@@ -232,7 +272,7 @@ ul {
   position: relative;
 }
 
-.aside .nav-toggler.open span{
+.aside .nav-toggler.open span {
   background-color: transparent;
 }
 
@@ -246,9 +286,9 @@ ul {
   left: 0;
 }
 
-.aside .nav-toggler.open span::before{
+.aside .nav-toggler.open span::before {
   transform: rotate(45deg);
-  top:0;
+  top: 0;
 }
 
 .aside .nav-toggler span::after {
@@ -261,9 +301,9 @@ ul {
   left: 0;
 }
 
-.aside .nav-toggler.open span::after{
+.aside .nav-toggler.open span::after {
   transform: rotate(-45deg);
-  top:0;
+  top: 0;
 }
 
 .aside .nav {
@@ -506,7 +546,7 @@ h3.my-profession {
 }
 
 .shadow-dark {
-  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  box-shadow: 0 0 20px #302e4d26;
 }
 
 .about .about-content .timeline .timeline-item {
@@ -562,6 +602,20 @@ h3.my-profession {
   line-height: 25px;
   text-align: justify;
 }
+.timeline-text-2 a {
+  font-size: 16px;
+  color: var(--skin-color);
+  line-height: 25px;
+  text-align: justify;
+}
+
+.timeline-text-2 {
+  font-size: 17px;
+  color: var(--text-black-700);
+  font-style: italic;
+  line-height: 25px;
+  text-align: justify;
+}
 
 /* Service */
 
@@ -571,8 +625,8 @@ h3.my-profession {
 
 .service .service-item {
   margin-bottom: 30px;
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 33%;
+  max-width: 33%;
 }
 .service .service-item .service-item-inner {
   background-color: var(--bg--black-100);
@@ -625,6 +679,20 @@ h3.my-profession {
 }
 
 /* Portfolio */
+
+.info-project {
+  margin: 10px;
+}
+
+.project-link a {
+  color: var(--text-black-900);
+  margin-right: 15px;
+}
+
+.project-link {
+  margin: 10px 0px 10px 15px;
+  font-size: 20px;
+}
 
 .portfolio .portfolio-heading {
   flex: 0 0 100%;
@@ -750,7 +818,6 @@ h3.my-profession {
 /* RESPONSIVE */
 
 @media (max-width: 1199px) {
-
   .section .container {
     padding-top: 70px;
   }
@@ -763,18 +830,18 @@ h3.my-profession {
     left: 30px;
   }
 
-  .aside .nav-toggler.open{
+  .aside .nav-toggler.open {
     left: 300px;
   }
 
-  .aside.open{
-    left:0;
-  }
-
-  .section{
+  .aside.open {
     left: 0;
   }
-  .section.open{
+
+  .section {
+    left: 0;
+  }
+  .section.open {
     left: 270px;
   }
 
@@ -785,7 +852,6 @@ h3.my-profession {
 }
 
 @media (max-width: 991px) {
-
   .contact .contact-info-item,
   .portfolio .portfolio-item,
   .service .service-item {
@@ -801,8 +867,7 @@ h3.my-profession {
   }
 }
 
-@media (max-width: 767px){
-
+@media (max-width: 767px) {
   .about .about-content .skills,
   .service .service-item,
   .portfolio .portfolio-item,
@@ -814,5 +879,4 @@ h3.my-profession {
     flex: 0 0 100%;
     max-width: 100%;
   }
-
 }

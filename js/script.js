@@ -4,9 +4,10 @@ var typed = new Typed(".typing", {
   strings: [
     "",
     "Artificial Intelligence Engineer",
-    "Mobile Developer",
+    "Software Project Manager",
+    "Machine Learning Engineer",
+    "Mobile App Developer",
     "Web Designer",
-    "Freelancer",
   ],
   typeSpeed: 100,
   BackSpeed: 60,
@@ -49,6 +50,15 @@ function addBackSection(num) {
   allSection[num].classList.add("back-section");
 }
 
+function removeBackSection2() {
+  for(let i=0; i< totalSection; i++) {
+    allSection[i].classList.remove("back-section2");
+  }
+}
+
+function addBackSection2(num) {
+  allSection[num].classList.add("back-section2");
+}
 
 
 function showSection(element) {
@@ -58,6 +68,7 @@ function showSection(element) {
   const target = element.getAttribute("href").split("#")[1];
   document.querySelector("#" + target).classList.add("active");
 }
+
 
 function updateNav(element) {
   for (let i = 0; i < totalNavList; i++) {
@@ -72,7 +83,15 @@ function updateNav(element) {
   }
 }
 
-document.querySelector(".hire-me").addEventListener("click", function () {
+document.querySelector(".btn-hireMe").addEventListener("click", function () {
+  const sectionIndex2 = this.getAttribute("data-section-index");
+  showSection(this);
+  updateNav(this);
+  removeBackSection2();
+  addBackSection2(sectionIndex2);
+})
+
+document.querySelector(".btn-cv").addEventListener("click", function () {
   const sectionIndex = this.getAttribute("data-section-index");
   showSection(this);
   updateNav(this);

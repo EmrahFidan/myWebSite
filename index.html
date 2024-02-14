@@ -13,14 +13,44 @@
     <link rel="stylesheet" href="css/skins/color-1.css" />
 
     <!-- Style switcher -->
-    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled/>
-    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled/>
-    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled/>
-    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled/>
-    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled/>
+    <link
+      rel="stylesheet"
+      href="css/skins/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled
+    />
 
-    <link rel="stylesheet" href="css/style-switcher.css">
-    
+    <link rel="stylesheet" href="css/style-switcher.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -28,12 +58,11 @@
 
     <script>
       // Sayfa tamamen yüklendikten sonra çalışacak olan kod
-      window.addEventListener("load", function() {
+      window.addEventListener("load", function () {
         // body elementinin classına dark classını ekle
         document.body.classList.add("dark");
       });
     </script>
-
   </head>
   <body>
     <!-- ===== Main Contain Start ===== -->
@@ -42,7 +71,25 @@
       <!-- ===== Aside Start ===== -->
       <div class="aside">
         <div class="logo">
-          <a href="#"><span>A</span>forizma</a>
+          <a
+            class="socialContainer containerOne"
+            href="https://www.linkedin.com/in/emrah-fidann/"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            class="socialContainer containerTwo"
+            href="https://nebilimben-ef.vercel.app/"
+          >
+            <i class="fa-solid fa-question"></i>
+          </a>
+          <a
+            style="padding-right: 10px"
+            class="socialContainer containerThree"
+            href="https://github.com/EmrahFidan"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
         <div class="nav-toggler">
           <span></span>
@@ -55,7 +102,9 @@
             <a href="#about"><i class="fa fa-user"> </i>About</a>
           </li>
           <li>
-            <a href="#services"><i class="fa-solid fa-bell-concierge"></i>Services</a>
+            <a href="#services"
+              ><i class="fa-solid fa-bell-concierge"></i>Services</a
+            >
           </li>
           <li>
             <a href="#portfolio"><i class="fa fa-briefcase"> </i>Portfolio</a>
@@ -69,7 +118,7 @@
       <!-- Main Content Start -->
       <div class="main-content">
         <!-- === Home Section Start === -->
-        <section class="home active section" id="home"> 
+        <section class="home active section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
@@ -81,14 +130,19 @@
                   <span class="typing">Artificial intelligence Engineer</span>
                 </h3>
                 <p>
-                  I'm a artificial intelligence Engineer wwith extensive
-                  experience for over 4 years. My expertise is to create and
-                  artificial intelligence applications and many more...
+                  I am a computer engineer who is progressing day by day in the
+                  fields of machine learning and deep learning. I am also
+                  developing myself in the fields of psychology, gamification
+                  and entrepreneurship because I believe that these areas will
+                  be an integral part of software products in marketing and
+                  business growth.
                 </p>
-                <a href="#" class="btn">Download CV</a>
+                <a href="#services" data-section-index="1" class="btn-cv"
+                  >Services</a
+                >
               </div>
               <div class="home-img">
-                <img src="images/ME/ME-dark.png" class="me-style"/>
+                <img src="images/ME/ME-dark.png" class="me-style" />
               </div>
             </div>
           </div>
@@ -112,14 +166,14 @@
                       <span></span>
                     </h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Non illum maiores accusantium minus similique, quibusdam
-                      pariatur iusto. Dignissimos nobis non, fugit modi quisquam
-                      voluptatem saepe veniam tempora delectus? Debitis,
-                      voluptatem earum nemo saepe consequuntur unde sunt
-                      voluptate, possimus velit harum architecto. Laborum
-                      quaerat eius expedita eum nulla eligendi consequuntur esse
-                      animi repellendus tempore, dolores vel!
+                      Computer engineer who is progressing day by day in the
+                      fields of machine learning and deep learning. I am also
+                      growing in psychology, gamification and entrepreneurship
+                      because I believe that these areas will be an integral
+                      part of software products in marketing and business
+                      growth, especially in psychology, because I believe that
+                      most of our future solutions will come from psychology
+                      rather than logic.
                     </p>
                   </div>
                 </div>
@@ -139,7 +193,7 @@
                         <p>Email: <span>emrahfdn.work@gmail.com</span></p>
                       </div>
                       <div class="info-item">
-                        <p>City: <span>Aydın</span></p>
+                        <p>Country: <span>Türkiye</span></p>
                       </div>
                       <div class="info-item">
                         <p>Freelance: <span>Available</span></p>
@@ -147,22 +201,34 @@
                     </div>
                     <div class="row">
                       <div class="buttons padd-15">
-                        <a href="#contact" data-section-index="1"  class="btn hire-me">Hire Me</a>
+                        <a
+                          href="https://cv-emrah-fidan.super.site/"
+                          class="btn btn-cv"
+                          >CV</a
+                        >
+                      </div>
+                      <div class="buttons padd-15">
+                        <a
+                          href="#contact"
+                          data-section-index="1"
+                          class="btn-hireMe"
+                          >Hire Me</a
+                        >
                       </div>
                     </div>
                   </div>
                   <div class="skills padd-15">
                     <div class="row">
                       <div class="skill-item padd-15">
-                        <h5>HTML</h5>
+                        <h5>Python</h5>
                         <div class="progress">
                           <div class="progress-in" style="width: 86%"></div>
-                          <div class="skill-percent">86%</div>
+                          <div class="skill-percent">90%</div>
                         </div>
                       </div>
 
                       <div class="skill-item padd-15">
-                        <h5>CSS</h5>
+                        <h5>Flutter</h5>
                         <div class="progress">
                           <div class="progress-in" style="width: 76%"></div>
                           <div class="skill-percent">76%</div>
@@ -170,18 +236,18 @@
                       </div>
 
                       <div class="skill-item padd-15">
-                        <h5>JAVA</h5>
+                        <h5>JavaScript</h5>
                         <div class="progress">
                           <div class="progress-in" style="width: 66%"></div>
-                          <div class="skill-percent">66%</div>
+                          <div class="skill-percent">63%</div>
                         </div>
                       </div>
 
                       <div class="skill-item padd-15">
-                        <h5>PYTHON</h5>
+                        <h5>Java</h5>
                         <div class="progress">
                           <div class="progress-in" style="width: 96%"></div>
-                          <div class="skill-percent">96%</div>
+                          <div class="skill-percent">70%</div>
                         </div>
                       </div>
                     </div>
@@ -197,53 +263,50 @@
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2013 - 2015
+                              <i class="fa fa-calendar"></i> August 2020 -
+                              Present
                             </h3>
                             <h4 class="timeline-title">
-                              Master in Computer Science
+                              Bachalor of Engineering - BE - Computer
+                              Engineering
                             </h4>
                             <p class="timeline-text">
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Nobis earum vero vitae. Libero
-                              quidem at praesentium officiis, facilis,
-                              reiciendis quae labore aperiam doloribus
-                              perspiciatis excepturi incidunt?
+                              Computer engineering education refers to an
+                              undergraduate programme that provides the basic
+                              knowledge and skills related to the development,
+                              design, maintenance and management of computers,
+                              both hardware and software.
                             </p>
+                            <p class="timeline-text">Grade: 3.11/4.00</p>
                           </div>
                           <!-- === timeline item ===-->
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2013 - 2015
+                              <i class="fa fa-calendar"></i> April 2023 - July ·
+                              4 month 2023
                             </h3>
                             <h4 class="timeline-title">
-                              Master in Computer Science
+                              21. Yüzyıl Yetkinlikleri Eğitim Programı ( Yetgen
+                              )
                             </h4>
                             <p class="timeline-text">
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Nobis earum vero vitae. Libero
-                              quidem at praesentium officiis, facilis,
-                              reiciendis quae labore aperiam doloribus
-                              perspiciatis excepturi incidunt?
+                              Interview Simulations, Effective Presentation
+                              Techniques, Teamwork, Career Planning, Modeling
+                              with Excel, Information / Media / Finance /
+                              Economy / Health Literacy, Social Innovation and
+                              IntroductionGen ( is a 14-week program in which
+                              training such as idea creation and marketing ) is
+                              organized.
+                            </p>
+                            <p class="timeline-text-2">
+                              <a
+                                href="https://verified.sertifier.com/en/verify/71861776532161/"
+                                >Certificate</a
+                              >
                             </p>
                           </div>
                           <!-- === timeline item ===-->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2013 - 2015
-                            </h3>
-                            <h4 class="timeline-title">
-                              Master in Computer Science
-                            </h4>
-                            <p class="timeline-text">
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Nobis earum vero vitae. Libero
-                              quidem at praesentium officiis, facilis,
-                              reiciendis quae labore aperiam doloribus
-                              perspiciatis excepturi incidunt?
-                            </p>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -257,51 +320,101 @@
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2013 - 2015
+                              <i class="fa fa-calendar"></i> July 2023 - August
+                              2023 · 1 month
                             </h3>
                             <h4 class="timeline-title">
-                              Master in Computer Science
+                              Flutter Mobile Developer ( Intern )
                             </h4>
+                            <p class="timeline-text-2">
+                              Adnan Menderes University
+                            </p>
                             <p class="timeline-text">
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Nobis earum vero vitae. Libero
-                              quidem at praesentium officiis, facilis,
-                              reiciendis quae labore aperiam doloribus
-                              perspiciatis excepturi incidunt?
+                              In my first technical internship, I developed an
+                              educational mobile application for my university's
+                              education faculty. In this project, I used Dart
+                              software language, Flutter framework and Firebase
+                              tools. I also used Figma for the design. I made
+                              the frontend design of the mobile app by following
+                              the Clean Code principles and Responsive design
+                              principles. In this process, we managed, developed
+                              our project with my team and agile software
+                              method.
+                            </p>
+                            <p class="timeline-text-2">
+                              <a
+                                href="https://github.com/EmrahFidan/educationApp"
+                                >You can review my project from this link</a
+                              >
                             </p>
                           </div>
                           <!-- === timeline item ===-->
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2013 - 2015
+                              <i class="fa fa-calendar"></i> August 2023 -
+                              Octaber 2023 · 2 month
                             </h3>
-                            <h4 class="timeline-title">
-                              Master in Computer Science
-                            </h4>
+                            <h4 class="timeline-title">Waiter</h4>
+                            <p class="timeline-text-2">Ramada Hotel & Suites</p>
                             <p class="timeline-text">
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Nobis earum vero vitae. Libero
-                              quidem at praesentium officiis, facilis,
-                              reiciendis quae labore aperiam doloribus
-                              perspiciatis excepturi incidunt?
+                              It allowed me to improve my communication skills
+                              and persuasion for marketing. I think that such a
+                              close profession with people will help me a lot
+                              for my future customer relationships. I had the
+                              opportunity to improve their English speaking
+                              skills.
                             </p>
                           </div>
                           <!-- === timeline item ===-->
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2013 - 2015
+                              <i class="fa fa-calendar"></i> November 2022 -
+                              June 2023 · 8 month
+                            </h3>
+                            <h4 class="timeline-title">Team Manager</h4>
+                            <p class="timeline-text-2">
+                              Game and Gamification Community
+                            </p>
+                            <p class="timeline-text">
+                              I headed the gamification department of a
+                              community that offers people information and
+                              activities in the fields of Game and Gamification.
+                              I realized how valuable the gamification area was
+                              in our lives, I started to discover and implement
+                              it. As a team, we were the first players of the
+                              community of playmaking among universities in
+                              Turkey. During the period we worked together, we
+                              used gamification techniques in our activities to
+                              instill the awareness of gamification to people.
+                              By collaborating in other communities, we have
+                              brought the awareness of gamification to more
+                              people.
+                            </p>
+                          </div>
+                          <!-- === timeline item ===-->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i> December 2022 -
+                              February 2023 · 3 month
                             </h3>
                             <h4 class="timeline-title">
-                              Master in Computer Science
+                              Audit Department Manager
                             </h4>
+                            <p class="timeline-text-2">
+                              ADU Teknoloji ve Kariyer Zirvesi
+                            </p>
                             <p class="timeline-text">
-                              Lorem ipsum dolor, sit amet consectetur
-                              adipisicing elit. Nobis earum vero vitae. Libero
-                              quidem at praesentium officiis, facilis,
-                              reiciendis quae labore aperiam doloribus
-                              perspiciatis excepturi incidunt?
+                              We worked for a technology summit organization
+                              with 50 students who are fully volunteers for our
+                              university. I managed the audit department, I
+                              designed the audit mechanism using my creativity.
+                              In this process, I had the opportunity to have
+                              experience in working as a team, working
+                              discipline and recruitment. I discovered my
+                              observation and analysis skills.
                             </p>
                           </div>
                         </div>
@@ -329,41 +442,19 @@
               <div class="service-item padd-15">
                 <div class="service-item-inner">
                   <div class="icon">
-                    <i class="fa fa-mobile-alt"></i>
+                    <i class="fa fa-head-side-virus"></i>
                   </div>
-                  <h4>Web Design</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Saepe nesciunt dolore quisquam.
-                  </p>
+                  <h4>Machine Learning Apps</h4>
                 </div>
               </div>
               <!-- ==== Service Item End ==== -->
               <!-- ==== Service Item Start ==== -->
               <div class="service-item padd-15">
                 <div class="service-item-inner">
-                  <div class="icon">
-                    <i class="fa fa-laptop-code"></i>
+                  <div class="icon"> 
+                    <i class="fa fa-puzzle-piece"></i>
                   </div>
-                  <h4>Web Design</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Saepe nesciunt dolore quisquam.
-                  </p>
-                </div>
-              </div>
-              <!-- ==== Service Item End ==== -->
-              <!-- ==== Service Item Start ==== -->
-              <div class="service-item padd-15">
-                <div class="service-item-inner">
-                  <div class="icon">
-                    <i class="fa fa-palette"></i>
-                  </div>
-                  <h4>Web Design</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Saepe nesciunt dolore quisquam.
-                  </p>
+                  <h4>Project Management</h4>
                 </div>
               </div>
               <!-- ==== Service Item End ==== -->
@@ -374,10 +465,26 @@
                     <i class="fa fa-code"></i>
                   </div>
                   <h4>Web Design</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Saepe nesciunt dolore quisquam.
-                  </p>
+                </div>
+              </div>
+              <!-- ==== Service Item End ==== -->
+              <!-- ==== Service Item Start ==== -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-mobile-alt"></i>
+                  </div>
+                  <h4>Mobile App Developer</h4>
+                </div>
+              </div>
+              <!-- ==== Service Item End ==== -->
+              <!-- ==== Service Item Start ==== -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-circle-check"></i>
+                  </div>
+                  <h4>Software Testing</h4>
                 </div>
               </div>
               <!-- ==== Service Item End ==== -->
@@ -406,14 +513,10 @@
                   <div class="portfolio-img">
                     <img src="images/portfolio/portfolio.jpeg" alt="" />
                   </div>
-                </div>
-              </div>
-              <!-- ===  portfolio item end ==== -->
-              <!-- ===  portfolio item start ==== -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner shadow-dark">
-                  <div class="portfolio-img">
-                    <img src="images/portfolio/portfolio.jpeg" alt="" />
+                  <div class="project-link">
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-brands fa-medium"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -424,14 +527,13 @@
                   <div class="portfolio-img">
                     <img src="images/portfolio/portfolio.jpeg" alt="" />
                   </div>
-                </div>
-              </div>
-              <!-- ===  portfolio item end ==== -->
-              <!-- ===  portfolio item start ==== -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner shadow-dark">
-                  <div class="portfolio-img">
-                    <img src="images/portfolio/portfolio.jpeg" alt="" />
+                  <div class="project-link">
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-solid fa-rocket"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -442,14 +544,13 @@
                   <div class="portfolio-img">
                     <img src="images/portfolio/portfolio.jpeg" alt="" />
                   </div>
-                </div>
-              </div>
-              <!-- ===  portfolio item end ==== -->
-              <!-- ===  portfolio item start ==== -->
-              <div class="portfolio-item padd-15">
-                <div class="portfolio-item-inner shadow-dark">
-                  <div class="portfolio-img">
-                    <img src="images/portfolio/portfolio.jpeg" alt="" />
+                  <div class="project-link">
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-solid fa-rocket"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -460,6 +561,14 @@
                   <div class="portfolio-img">
                     <img src="images/portfolio/portfolio.jpeg" alt="" />
                   </div>
+                  <div class="project-link">
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-solid fa-rocket"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
               <!-- ===  portfolio item end ==== -->
@@ -468,6 +577,43 @@
                 <div class="portfolio-item-inner shadow-dark">
                   <div class="portfolio-img">
                     <img src="images/portfolio/portfolio.jpeg" alt="" />
+                  </div>
+                  <div class="project-link">
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-solid fa-rocket"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- ===  portfolio item end ==== -->
+              <!-- ===  portfolio item start ==== -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio.jpeg" alt="" />
+                  </div>
+                  <div class="project-link">
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- ===  portfolio item end ==== -->
+
+              <!-- ===  portfolio item start ==== -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio.jpeg" alt="" />
+                  </div>
+                  <div class="project-link">
+                    <a href="https://github.com/EmrahFidan">
+                      <i class="fa-solid fa-display"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -522,10 +668,7 @@
               <!-- ===  Contact info item end ==== -->
             </div>
 
-            <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-            <h4 class="contact-sub-title padd-15">
-              I'M VERY RESPONSIVE TO MESSAGE
-            </h4>
+            <h3 class="contact-title padd-15">SEND ME EMAIL</h3>
 
             <!-- ===  Contact form ==== -->
             <div class="row">
@@ -579,7 +722,9 @@
 
                 <div class="row">
                   <div class="form-item col-12 padd-15">
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn btn-cv">
+                      Send Message
+                    </button>
                   </div>
                 </div>
               </div>
@@ -614,7 +759,10 @@
     <!-- ===== Style Switch End ===== -->
 
     <!-- JS files -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
   </body>
